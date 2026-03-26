@@ -30,7 +30,7 @@ public class Main {
         }
         for (int i = 0; i < n; i++) {
             if(arr[i]>c)break;
-            for (int j = 0; j < n; j++) {
+            for (int j = i+1; j < n; j++) {
                 if(arr[j]==arr[i]){continue;}
                 if(arr[i]+arr[j]>c)break;
                 int temp = c-arr[i]-arr[j];
